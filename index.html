@@ -1,19 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Brust</title>
+
+  <!-- Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Play CDN for Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Librari -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Customize Color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'com-black': '#121212',
+            'com-p-color': 'rgba(18, 18, 18, 1)'
+
+          }
+        }
+      }
+    }
+  </script>
+
+
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
 </head>
-<body>
-    <header>
 
-    </header>
-    <main>
+<body class="font-lato bg-white">
+  <header class="pl-2 pr-2 lg:pl-44 lg:pr-44">
+    <!-- Navbar -->
+    <nav>
 
-    </main>
-    <footer>
-        
-    </footer>
+    </nav>
+    <!-- Bannar section with carouse  -->
+    <section>
+      <div class="carousel my-10 rounded w-full">
+        <!-- slide 1 -->
+        <div id="slide1" class="carousel-item relative h-60 md:h-96 w-full">
+          <div class="hero " style="background-image: url(/images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-xs md:max-w-md">
+                <h1 class="mb-5 text-3xl lg:text-5xl text-[#FFFFFf] font-extrabold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm text-[#FFFFFF]">We supply highly quality organic products</p>
+                <button class="rounded-lg px-8 py-3 bg-[#F85559] text-[#FFFFFF]">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div id="slide2" class="carousel-item relative h-60 md:h-96 w-full">
+          <div class="hero" style="background-image: url(/images/banner2.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-xs md:max-w-md">
+                <h1 class="mb-5 text-3xl lg:text-5xl text-[#FFFFFf] font-extrabold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm text-[#FFFFFF]">We supply highly quality organic products</p>
+                <button class="rounded-lg px-8 py-3 bg-[#F85559] text-[#FFFFFF]">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div id="slide3" class="carousel-item relative h-60 md:h-96 w-full">
+          <div class="hero " style="background-image: url(/images/banner3.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-xs md:max-w-md">
+                <h1 class="mb-5 text-3xl lg:text-5xl text-[#FFFFFf] font-extrabold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm text-[#FFFFFF]">We supply highly quality organic products</p>
+                <button class="rounded-lg px-8 py-3 bg-[#F85559] text-[#FFFFFF]">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div id="slide4" class="carousel-item relative h-60 md:h-96 w-full">
+          <div class="hero " style="background-image: url(/images/banner4.png);">
+            <div class="hero-overlay bg-opacity-80"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-xs md:max-w-md">
+                <h1 class="mb-5 text-3xl lg:text-5xl text-[#FFFFFf] font-extrabold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm text-[#FFFFFF]">We supply highly quality organic products</p>
+                <button class=" rounded-lg px-8 py-3 bg-[#F85559] text-[#FFFFFF]">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="pl-2 pr-2 lg:pl-44 lg:pr-44">
+    <!-- Deal Of the day section -->
+    <section>
+      <!-- Heading And Countdown -->
+      <div class="flex flex-col items-center lg:flex-row lg:justify-between">
+        <div class="flex flex-col md:items-center lg:items-start">
+          <h1 class="mb-5 text-com-black text-5xl font-extrabold">Deal of the day</h1>
+          <p class="mb-10 md:w-[600px] text-[rgba(18, 18, 18, 1)] text-base font-medium">Contrary to popular belief, is
+            not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.</p>
+        </div>
+        <div class="text-com-black mb-10">
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:34;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- First Card -->
+          <div class="card p-9 bg-[#ffe] border border-gray-300">
+            <figure><img class="w-36" src="/images/fruit6.png" alt="Apple" /></figure>
+            <div class="card-body justify-center items-center">
+              <h3 class="text-center pb-3 border-b-2 font-bold text-2xl text-com-black">12.90$ - 18.85$</h3>
+              <p class="text-[rgba(18, 18, 18, 0.60)] text-base font-medium">Banker</p>
+              <div class="rating justify-center mb-3">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div class="space-y-4 text-center">
+                <!-- Open the modal using ID.showModal() method -->
+                <button class=" bg-none text-lg font-normal text-[#F85559]" onclick="my_modal_5.showModal()">Details</button>
+                <dialog id="my_modal_5" class="modal sm:modal-middle">
+                  <form method="dialog" class="modal-box bg-white">
+                    <div class="flex justify-center py-5">
+                      <img src="images/fruit6.png" alt="Apples...">
+                    </div>
+                    <h3 class="text-center mb-4 font-bold text-2xl text-com-black">Apples</h3>
+                    <p class="mb-4 text-[rgba(18, 18, 18, 0.60)] text-base font-medium">Professional employees are there for you to pick the <br> most amazing and fresh fruits.</p>
+                    <div class="rating justify-center mb-4">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="modal-action flex justify-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class=" px-7 py-2 bg-none border-2 rounded-md"> Close</button>
+                      <button class=" px-7 py2 bg-[#F85559] text-white border-2 rounded-md">Buy Now</button>
+
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="flex my-10 justify-center">
+        <button class="rounded-lg px-8 py-3 bg-[#F85559] text-[#FFFFFF]">Shop All</button>
+      </div>
+
+    </section>
+    <!-- Team Section -->
+    <section>
+      <div class="hero" style="background-image: url(/images/team.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="text-center">
+            <h1 class="mb-5 text-3xl lg:text-5xl text-[#FFFFFf] font-extrabold">Meet the team section</h1>
+            <p class="mb-10 text-base font-medium text-[#FFFFFF]">Contrary to popular belief, is not simply random text.
+              It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="grid gap-12 md:grid-cols-4 justify-center">
+              <div class="w-min-[150px] items-center">
+                <div class="flex justify-center">
+                  <img class="w-[140px] mb-7" src="/images/member1.png" alt="">
+                </div>
+                <h1 class="text-2xl text-[#FFF] font-bold">Awlad Hossain</h1>
+                <p class="text-base text-[#FFF] font-medium">Fruits Expert</p>
+                <div class="flex mt-3 justify-center">
+                  <i class="fa-brands fa-facebook rounded-full mr-3 bg-[#FFF] text-[#F85559]"></i>
+                  <i class="fa-brands fa-twitter rounded-full mr-3 bg-[#F85559] text-[#FFFFFF]"></i>
+                  <i class="fa-brands fa-linkedin rounded-[50%] bg-[#F85559] text-[#FFFFFF]"></i>
+                </div>
+              </div>
+              <div class="min-w-[150px] items-center">
+                <div class="flex justify-center">
+                  <img class="w-[140px] mb-7" src="/images/member2.png" alt="">
+                </div>
+                <h1 class="text-2xl text-[#FFF] font-bold">Safia Chowdhury</h1>
+                <p class="text-base text-[#FFF] font-medium">Fruits Expert</p>
+                <div class="flex mt-3 justify-center">
+                  <i class="fa-brands fa-facebook rounded-full mr-3 bg-[#FFF] text-[#F85559]"></i>
+                  <i class="fa-brands fa-twitter rounded-full mr-3 bg-[#F85559] text-[#FFFFFF]"></i>
+                  <i class="fa-brands fa-linkedin rounded-[50%] bg-[#F85559] text-[#FFFFFF]"></i>
+                </div>
+              </div>
+              <div class="min-w-[150px] justify-self-center items-center">
+                <div class="flex justify-center">
+                  <img class="w-[140px] mb-7" src="/images/member3.png" alt="">
+                </div>
+                <h1 class="text-2xl text-[#FFF] font-bold">Rokib Hossain</h1>
+                <p class="text-base text-[#FFF] font-medium">Fruits Expert</p>
+                <div class="flex mt-3 justify-center">
+                  <i class="fa-brands fa-facebook rounded-full mr-3 bg-[#FFF] text-[#F85559]"></i>
+                  <i class="fa-brands fa-twitter rounded-full mr-3 bg-[#F85559] text-[#FFFFFF]"></i>
+                  <i class="fa-brands fa-linkedin rounded-[50%] bg-[#F85559] text-[#FFFFFF]"></i>
+                </div>
+              </div>
+              <div class="min-w-[150px] justify-center items-center">
+                <div class="flex justify-center">
+                  <img class="w-[140px] mb-7" src="/images/member4.png" alt="">
+                </div>
+                <h1 class="text-2xl text-[#FFF] font-bold">Chaity</h1>
+                <p class="text-base text-[#FFF] font-medium">Fruits Expert</p>
+                <div class="flex mt-3 justify-center">
+                  <i class="fa-brands fa-facebook rounded-full mr-3 bg-[#FFF] text-[#F85559]"></i>
+                  <i class="fa-brands fa-twitter rounded-full mr-3 bg-[#F85559] text-[#FFFFFF]"></i>
+                  <i class="fa-brands fa-linkedin rounded-[50%] bg-[#F85559] text-[#FFFFFF]"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
 </body>
+
 </html>
